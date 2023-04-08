@@ -1625,7 +1625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1680518861772),
+    lastupdate: new Date(1680944763778),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2412,9 +2412,88 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/08/ubuntu更换apt源/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="extends">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="extends">
+    <meta itemprop="description" content="个人博客">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/04/08/ubuntu%E6%9B%B4%E6%8D%A2apt%E6%BA%90/"  itemprop="url">
+        ubuntu更换apt源
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Ubuntu更换apt国内源修改/etc/apt/sources.list配置文件
+使用vim编辑器在文件最前面添加内容
+vim命令
+1$ sudo vim /etc/apt/sources.list
+
+添加内容（阿里源）
+12345678910deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe mult...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/extendsy'><img src='https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg">
+            <meta itemprop="name" content="extends">
+            <meta itemprop="url" content="https://github.com/extendsy">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-04-08T16:47:23+08:00">2023-04-08</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url"><span itemprop="name">后端</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/04/08/ubuntu%E6%9B%B4%E6%8D%A2apt%E6%BA%90/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -3132,84 +3211,6 @@ post 和 put 请求传递参数
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/09/docker笔记/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="extends">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="extends">
-    <meta itemprop="description" content="个人博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/12/09/docker%E7%AC%94%E8%AE%B0/"  itemprop="url">
-        docker笔记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        安装dockerDocker 并非是一个通用的容器工具，它依赖于已存在并运行的 Linux 内核环境。
-Docker 实质上是在已经运行的 Linux 下制造了一个隔离的文件环境，因此它执行的效率几乎等同于所部署的 Linux 主机。
-所以，Docker 必须部署在 Linux 内核的系统上。如果其他系统想部署 Docker 就必须安装一个虚拟 Linux 环境。
-Linux系统安装与卸载使...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/extendsy'><img src='https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg">
-            <meta itemprop="name" content="extends">
-            <meta itemprop="url" content="https://github.com/extendsy">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-12-09T16:14:47+08:00">2022-12-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url"><span itemprop="name">后端</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%90%8E%E7%AB%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/" itemprop="url"><span itemprop="name">服务器</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/12/09/docker%E7%AC%94%E8%AE%B0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3344,7 +3345,7 @@ Linux系统安装与卸载使...
           <li><a class="flat-box"
             title="/categories/%E5%90%8E%E7%AB%AF/" href="/categories/%E5%90%8E%E7%AB%AF/"
             active-action="action-categoriesE5908EE7ABAF"
-            ><div class='name'>后端</div><div class='badge'>(7)</div></a></li>
+            ><div class='name'>后端</div><div class='badge'>(8)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/%E5%90%8E%E7%AB%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/" href="/categories/%E5%90%8E%E7%AB%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/"
@@ -3374,7 +3375,7 @@ Linux系统安装与卸载使...
 
 
     <div class='content'>
-      <a href="/tags/MySQL/" style="font-size: 14px; color: #999">MySQL</a> <a href="/tags/axios/" style="font-size: 20.67px; color: #6c6c6c">axios</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/java/" style="font-size: 17.33px; color: #828282">java</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mybatis/" style="font-size: 14px; color: #999">mybatis</a> <a href="/tags/springboot/" style="font-size: 14px; color: #999">springboot</a> <a href="/tags/swagger/" style="font-size: 14px; color: #999">swagger</a> <a href="/tags/web/" style="font-size: 14px; color: #999">web</a> <a href="/tags/websocket/" style="font-size: 14px; color: #999">websocket</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 24px; color: #555">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 14px; color: #999">后端</a> <a href="/tags/%E5%B1%8F%E5%B9%95%E9%97%AA%E5%8A%A8/" style="font-size: 14px; color: #999">屏幕闪动</a>
+      <a href="/tags/MySQL/" style="font-size: 14px; color: #999">MySQL</a> <a href="/tags/axios/" style="font-size: 20.67px; color: #6c6c6c">axios</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/java/" style="font-size: 17.33px; color: #828282">java</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mybatis/" style="font-size: 14px; color: #999">mybatis</a> <a href="/tags/springboot/" style="font-size: 14px; color: #999">springboot</a> <a href="/tags/swagger/" style="font-size: 14px; color: #999">swagger</a> <a href="/tags/web/" style="font-size: 14px; color: #999">web</a> <a href="/tags/websocket/" style="font-size: 14px; color: #999">websocket</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 24px; color: #555">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 14px; color: #999">后端</a> <a href="/tags/%E5%B1%8F%E5%B9%95%E9%97%AA%E5%8A%A8/" style="font-size: 14px; color: #999">屏幕闪动</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 14px; color: #999">服务器</a>
     </div>
   </section>
 
