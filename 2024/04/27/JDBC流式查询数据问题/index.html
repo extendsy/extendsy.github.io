@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/tags/swagger/"/>
+  
+  <link rel="canonical" href="http://example.com/2024/04/27/jdbc流式查询数据问题/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,18 +32,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：swagger - extends</title>
-  <meta name="keywords" content="null">
+  <title>JDBC流式查询数据问题 - extends</title>
+  <meta name="keywords" content="JDBC,null">
   <meta desc name="description" content="个人博客 - extends - extends">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="extends">
-<meta property="og:url" content="http://example.com/tags/swagger/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JDBC流式查询数据问题">
+<meta property="og:url" content="http://example.com/2024/04/27/JDBC%E6%B5%81%E5%BC%8F%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="extends">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="JDBC查询大数据防止内存溢出问题查询数据库中大量数据时发生内存溢出 原因jdbc查询MySQL时会默认一次将查询的结果数据全部从服务器加载到内存中，当数据过多时，就会导致内存溢出。 解决方案 设置每次从服务器加载到内存的条数 statement.setFetchSize(batchSize);  设置ResultSet对象的大小的限制 statement.setMaxRows（int i）">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-04-27T03:09:12.000Z">
+<meta property="article:modified_time" content="2024-04-27T03:10:46.584Z">
 <meta property="article:author" content="extends">
+<meta property="article:tag" content="JDBC">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2317,7 +2320,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2371,25 +2374,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/08/swagger配置教程/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/04/27/JDBC流式查询数据问题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="extends">
   </span>
@@ -2398,75 +2385,244 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="个人博客">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/03/08/swagger%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"  itemprop="url">
-        swagger配置教程
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        实时接口文档就是可以根据代码来自动生成相应的接口文档，优点就是我们的代码发生变化时，生成的接口文档也会自动更新，无需我们去修改接口文档，只需要按时发布即可。但是由于是根据代码自动生成的，所以最大的弊端就是代码侵入性强，需要我们在项目代码中集成生成接口文档的相关代码。
-SpringBoot集成swagger2引入依赖12345678910&lt;dependency&gt;    &lt;gr...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        JDBC流式查询数据问题
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://github.com/extendsy" rel="nofollow noopener">
+    <img itemprop="image" src="https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg" class="lazyload" data-srcset="https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">extends</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url"><span itemprop="name">后端</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/extendsy'><img src='https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg">
-            <meta itemprop="name" content="extends">
-            <meta itemprop="url" content="https://github.com/extendsy">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-03-08T11:16:05+08:00">2023-03-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url"><span itemprop="name">后端</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-04-27T11:09:12+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年4月27日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="JDBC查询大数据防止内存溢出"><a href="#JDBC查询大数据防止内存溢出" class="headerlink" title="JDBC查询大数据防止内存溢出"></a>JDBC查询大数据防止内存溢出</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>查询数据库中大量数据时发生内存溢出</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>jdbc查询MySQL时会默认一次将查询的结果数据全部从服务器加载到内存中，当数据过多时，就会导致内存溢出。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol>
+<li><p>设置每次从服务器加载到内存的条数</p>
+<p><code>statement.setFetchSize(batchSize);</code></p>
+</li>
+<li><p>设置ResultSet对象的大小的限制</p>
+<p><code>statement.setMaxRows（int i）</code></p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 设置为只能向下读取和只读，能够及时释放内存</span></span><br><span class="line"><span class="type">Statement</span> <span class="variable">statement</span> <span class="operator">=</span> connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);</span><br><span class="line">statement.setFetchSize(batchSize); <span class="comment">// 设置从数据库取得多行的行数大小</span></span><br><span class="line">statement.setMaxRows(maxRows); <span class="comment">// 将此 Statement 对象生成的所有 ResultSet 对象可以包含的最大行数限制设置为给定数</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="可能会出现的问题"><a href="#可能会出现的问题" class="headerlink" title="可能会出现的问题"></a>可能会出现的问题</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">org.springframework.dao.DataAccessResourceFailureException: PreparedStatementCallback; SQL []; Could not create connection to database server. Attempted reconnect <span class="number">3</span> times. Giving up.; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect <span class="number">3</span> times. Giving up.</span><br><span class="line">  ......</span><br><span class="line">Caused by: java.sql.SQLException: Streaming result set com.mysql.cj.protocol.a.result.ResultsetRowsStreaming@5869a708 is still active. No statements may be issued when any streaming result sets are open and in use on a given connection. Ensure that you have called .close() on any active streaming result sets before attempting more queries.</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>无法建立连接服务</p>
+<p>以下错误消息 “流式传输结果集 com.mysql.jdbc.RowDataDynamic@XXXXXX 仍然处于活动状态. 当任何流式传输结果集打开并在给定连接上使用时, 不会发出任何语句. 确保您已调用 <code>.close()</code> 在尝试更多查询之前在任何活动的流式传输结果集上” 来自 MySQL.</p>
+</blockquote>
+<p>​       流模式有一个限制: 当结果集在 MySQL 连接上以流模式打开时, 您不能使用同一数据库连接来运行其他查询. 这正是上面的错误消息所告诉的. 该问题的解决方案是将 MySQL 连接设置更改为使用 CursorFetch 模式而不是 Streaming 模式.</p>
+<p>​       其实 MySQL 本身并没有 FetchSize 方法, 它是通过使用 CS 阻塞方式的网络流控制实现服务端不会一下发送大量数据到客户端撑爆客户端内存,  这样带来的问题: 如果使用了流式查询, 一个 MySQL 数据库连接同一时间只能为一个 ResultSet 对象服务, 并且如果该 ResultSet 对象没有关闭, 势必会影响其他查询对数据库连接的使用! 此为大坑,如果应用对数据库连接的消耗要求严苛, 那么流式查询就不再适合</p>
+<p>​      基于游标的流来检索一组行. 这可以通过将连接属性 <code>useCursorFetch</code> 设置为 true, 然后调用 <code>setFetchSize(int)</code> 来设置每次要获取的行数:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">conn = DriverManager.getConnection(<span class="string">&quot;jdbc:mysql://localhost/?useCursorFetch=true&quot;</span>, <span class="string">&quot;user&quot;</span>, <span class="string">&quot;s3cr3t&quot;</span>);</span><br><span class="line">stmt = conn.createStatement();</span><br><span class="line">stmt.setFetchSize(<span class="number">100</span>);</span><br><span class="line">rs = stmt.executeQuery(<span class="string">&quot;SELECT * FROM your_table&quot;</span>);</span><br></pre></td></tr></table></figure>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/03/08/swagger%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-04-27T11:10:46+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年4月27日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/JDBC/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>JDBC</p></a></div>
+  <span hidden itemprop="keywords">JDBC</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2024/04/27/JDBC%E6%B5%81%E5%BC%8F%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/&title=JDBC流式查询数据问题 - extends&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2024/04/27/JDBC%E6%B5%81%E5%BC%8F%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/&title=JDBC流式查询数据问题 - extends&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2024/04/27/JDBC%E6%B5%81%E5%BC%8F%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/&title=JDBC流式查询数据问题 - extends&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2024/04/27/springboot%E9%85%8D%E7%BD%AE%E6%8B%A6%E6%88%AA%E5%99%A8%E6%8B%BC%E6%8E%A5SQL/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>springboot配置拦截器拼接SQL</p>
+          <p class='content'>SpringBoot自动装配SpringBoot 定义了一套接口规范，这套规范规定：SpringBoot 在启动时会扫描外部引用 jar 包中的META-INF&#x2F;spring.fact...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/11/25/%E4%BD%8D%E8%BF%90%E7%AE%97/'>
+          <p class='title'>位运算<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+位运算（&amp;、|、^、~、&gt;&gt;、&lt;&lt;）​       从现代计算机中所有的数据二进制的形式存储在设备中。即 0、1 两种状态，计算机对二进制数据进行的运算(+、-...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/04/27/JDBC%E6%B5%81%E5%BC%8F%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/index.html#comments">
+    </span>
+    <p ct><i class='fas fa-comments'></i> 评论</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2475,157 +2631,48 @@ SpringBoot集成swagger2引入依赖12345678910&lt;dependency&gt;    &lt;gr...
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>Extends</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">extends</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:1393687715@qq.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/extendsy/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%89%8D%E5%90%8E%E7%AB%AF/" href="/categories/%E5%89%8D%E5%90%8E%E7%AB%AF/"
-            active-action="action-categoriesE5898DE5908EE7ABAF"
-            ><div class='name'>前后端</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
-            active-action="action-categoriesE5898DE7ABAF"
-            ><div class='name'>前端</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%89%8D%E7%AB%AF/WebSocket/" href="/categories/%E5%89%8D%E7%AB%AF/WebSocket/"
-            active-action="action-categoriesE5898DE7ABAFWebSocket"
-            ><div class='name'>WebSocket</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%89%8D%E7%AB%AF/axios/" href="/categories/%E5%89%8D%E7%AB%AF/axios/"
-            active-action="action-categoriesE5898DE7ABAFaxios"
-            ><div class='name'>axios</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%89%8D%E7%AB%AF/vue/" href="/categories/%E5%89%8D%E7%AB%AF/vue/"
-            active-action="action-categoriesE5898DE7ABAFvue"
-            ><div class='name'>vue</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%90%8E%E7%AB%AF/" href="/categories/%E5%90%8E%E7%AB%AF/"
-            active-action="action-categoriesE5908EE7ABAF"
-            ><div class='name'>后端</div><div class='badge'>(13)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%90%8E%E7%AB%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/" href="/categories/%E5%90%8E%E7%AB%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/"
-            active-action="action-categoriesE5908EE7ABAFE69C8DE58AA1E599A8"
-            ><div class='name'>服务器</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/JDBC/" style="font-size: 14px; color: #999">JDBC</a> <a href="/tags/MySQL/" style="font-size: 14px; color: #999">MySQL</a> <a href="/tags/axios/" style="font-size: 20.67px; color: #6c6c6c">axios</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/java/" style="font-size: 17.33px; color: #828282">java</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mybatis/" style="font-size: 14px; color: #999">mybatis</a> <a href="/tags/springboot/" style="font-size: 17.33px; color: #828282">springboot</a> <a href="/tags/swagger/" style="font-size: 14px; color: #999">swagger</a> <a href="/tags/web/" style="font-size: 14px; color: #999">web</a> <a href="/tags/websocket/" style="font-size: 14px; color: #999">websocket</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 24px; color: #555">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 14px; color: #999">后端</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 14px; color: #999">基础</a> <a href="/tags/%E5%B1%8F%E5%B9%95%E9%97%AA%E5%8A%A8/" style="font-size: 14px; color: #999">屏幕闪动</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 17.33px; color: #828282">服务器</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/" style="font-size: 14px; color: #999">计算机原理</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98"><span class="toc-text">问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0"><span class="toc-text">原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-text">解决方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text">可能会出现的问题</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2653,13 +2700,14 @@ SpringBoot集成swagger2引入依赖12345678910&lt;dependency&gt;    &lt;gr...
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3262,7 +3310,7 @@ SpringBoot集成swagger2引入依赖12345678910&lt;dependency&gt;    &lt;gr...
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"extends"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/tags/swagger/","name":"swagger"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"extends","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"extends","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"extends"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/后端/","name":"后端"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/04/27/JDBC流式查询数据问题/","name":"JDBC流式查询数据问题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"extends","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"JDBC流式查询数据问题","description":"个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/04/27/JDBC%E6%B5%81%E5%BC%8F%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/"},"author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"extends","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/04/27/JDBC%E6%B5%81%E5%BC%8F%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/","wordCount":0,"datePublished":"2024-04-27T03:09:12.000Z","dateModified":"2024-04-27T03:10:46.584Z","articleSection":"后端","keywords":"JDBC","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/tags/swagger/"/>
+  <link rel="canonical" href="http://example.com/tags/jdbc/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,13 +32,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：swagger - extends</title>
+  <title>标签：JDBC - extends</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="个人博客 - extends - extends">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="extends">
-<meta property="og:url" content="http://example.com/tags/swagger/index.html">
+<meta property="og:url" content="http://example.com/tags/JDBC/index.html">
 <meta property="og:site_name" content="extends">
 <meta property="og:description" content="个人博客">
 <meta property="og:locale" content="zh_CN">
@@ -2389,7 +2389,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/08/swagger配置教程/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/04/27/JDBC流式查询数据问题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="extends">
   </span>
@@ -2407,16 +2407,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/03/08/swagger%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"  itemprop="url">
-        swagger配置教程
+      <a href="/2024/04/27/JDBC%E6%B5%81%E5%BC%8F%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/"  itemprop="url">
+        JDBC流式查询数据问题
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        实时接口文档就是可以根据代码来自动生成相应的接口文档，优点就是我们的代码发生变化时，生成的接口文档也会自动更新，无需我们去修改接口文档，只需要按时发布即可。但是由于是根据代码自动生成的，所以最大的弊端就是代码侵入性强，需要我们在项目代码中集成生成接口文档的相关代码。
-SpringBoot集成swagger2引入依赖12345678910&lt;dependency&gt;    &lt;gr...
+        JDBC查询大数据防止内存溢出问题查询数据库中大量数据时发生内存溢出
+原因jdbc查询MySQL时会默认一次将查询的结果数据全部从服务器加载到内存中，当数据过多时，就会导致内存溢出。
+解决方案
+设置每次从服务器加载到内存的条数
+statement.setFetchSize(batchSize);
+
+设置ResultSet对象的大小的限制
+statement.setMaxRows（int i）...
       
     
   </div>
@@ -2432,7 +2438,7 @@ SpringBoot集成swagger2引入依赖12345678910&lt;dependency&gt;    &lt;gr...
             <meta itemprop="url" content="https://github.com/extendsy">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-03-08T11:16:05+08:00">2023-03-08</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-04-27T11:09:12+08:00">2024-04-27</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a>
@@ -2445,7 +2451,7 @@ SpringBoot集成swagger2引入依赖12345678910&lt;dependency&gt;    &lt;gr...
       </div>
       
         <div>
-          <a class='readmore' href='/2023/03/08/swagger%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/' itemprop="url">
+          <a class='readmore' href='/2024/04/27/JDBC%E6%B5%81%E5%BC%8F%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3262,7 +3268,7 @@ SpringBoot集成swagger2引入依赖12345678910&lt;dependency&gt;    &lt;gr...
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"extends"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/tags/swagger/","name":"swagger"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"extends","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"extends","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"extends"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/tags/JDBC/","name":"JDBC"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"extends","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"extends","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
