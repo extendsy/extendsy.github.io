@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/04/08/ubuntu更换apt源/"/>
+  <link rel="canonical" href="http://example.com/2025/03/05/配置ssh密钥/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,21 +32,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>ubuntu更换apt源 - extends</title>
-  <meta name="keywords" content="服务器,null">
+  <title>配置ssh密钥 - extends</title>
+  <meta name="keywords" content="ssh,null">
   <meta desc name="description" content="个人博客 - extends - extends">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="ubuntu更换apt源">
-<meta property="og:url" content="http://example.com/2023/04/08/ubuntu%E6%9B%B4%E6%8D%A2apt%E6%BA%90/index.html">
+<meta property="og:title" content="配置ssh密钥">
+<meta property="og:url" content="http://example.com/2025/03/05/%E9%85%8D%E7%BD%AEssh%E5%AF%86%E9%92%A5/index.html">
 <meta property="og:site_name" content="extends">
-<meta property="og:description" content="Ubuntu更换apt国内源修改&#x2F;etc&#x2F;apt&#x2F;sources.list配置文件 使用vim编辑器在文件最前面添加内容 vim命令 1$ sudo vim &#x2F;etc&#x2F;apt&#x2F;sources.list  添加内容（阿里源） 12345678910deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; bionic main restricted universe multive">
+<meta property="og:description" content="前提条件已经安装好 Git  本机具有OpenSSH（GNU&#x2F;Linux, macOS, 或 Windows 10 已内置 OpenSSH） Windows使用 Git Bash 输入命令 生成 SSH 密钥 访问终端（ Windows 请使用 WSL 或 Git Bash），运行ssh-keygen -t。 输入密钥算法类型和可选的注释。注释会出现在.pub文件中，一般可使用邮箱作为注">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-04-08T08:47:23.000Z">
-<meta property="article:modified_time" content="2023-04-08T09:05:07.325Z">
+<meta property="article:published_time" content="2025-03-05T07:17:32.000Z">
+<meta property="article:modified_time" content="2025-03-05T07:18:40.945Z">
 <meta property="article:author" content="extends">
-<meta property="article:tag" content="服务器">
+<meta property="article:tag" content="ssh">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2376,7 +2376,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/08/ubuntu更换apt源/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/05/配置ssh密钥/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="extends">
   </span>
@@ -2397,7 +2397,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        ubuntu更换apt源
+        配置ssh密钥
       </h1>
       <div class='new-meta-box'>
         
@@ -2416,10 +2416,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a>
+    <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
         <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url"><span itemprop="name">后端</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E5%90%8E%E7%AB%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/" itemprop="url"><span itemprop="name">服务器</span></a>
       </span>
     
   </div>
@@ -2428,10 +2432,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-04-08T16:47:23+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-03-05T15:17:32+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年4月8日</p>
+    <p>发布于：2025年3月5日</p>
   </a>
 </div>
 
@@ -2454,30 +2458,99 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="Ubuntu更换apt国内源"><a href="#Ubuntu更换apt国内源" class="headerlink" title="Ubuntu更换apt国内源"></a>Ubuntu更换apt国内源</h2><p>修改<code>/etc/apt/sources.list</code>配置文件</p>
-<p>使用vim编辑器在文件最前面添加内容</p>
-<p>vim命令</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo vim /etc/apt/sources.list</span></span><br></pre></td></tr></table></figure>
+    <h2 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h2><p>已经安装好 Git </p>
+<p>本机具有OpenSSH（GNU&#x2F;Linux, macOS, 或 Windows 10 已内置 OpenSSH）</p>
+<p>Windows使用 Git Bash 输入命令</p>
+<h2 id="生成-SSH-密钥"><a href="#生成-SSH-密钥" class="headerlink" title="生成 SSH 密钥"></a>生成 SSH 密钥</h2><ol>
+<li>访问终端（ Windows 请使用 WSL 或 Git Bash），运行<code>ssh-keygen -t</code>。</li>
+<li>输入密钥算法类型和可选的注释。注释会出现在<code>.pub</code>文件中，一般可使用邮箱作为注释内容。</li>
+</ol>
+<ul>
+<li><p>基于<code>ED25519</code>算法，生成密钥对命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;&lt;注释内容&gt;&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>基于<code>RSA</code>算法，生成密钥对命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;&lt;注释内容&gt;&quot;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>算法类型</th>
+<th>公钥</th>
+<th>私钥</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>ED25519 （推荐</strong>）</td>
+<td>id_ed25519.pub</td>
+<td>id_ed25519</td>
+</tr>
+<tr>
+<td>RSA （不推荐）</td>
+<td>id_rsa.pub</td>
+<td>id_rsa</td>
+</tr>
+</tbody></table>
+<blockquote>
+<ul>
+<li>-t 指定密钥类型，默认是 rsa ，可以省略</li>
+<li>-C 设置注释文字，比如邮箱</li>
+<li>-f 指定密钥文件存储文件名</li>
+</ul>
+</blockquote>
+<p>当省略输入<code>-f</code>参数后会在之后让你输入一个文件名，用于保存生成的SSH key，也可以不输入文件名，使用默认文件名（推荐），那么就会生成 id_rsa 和 id_rsa.pub 两个秘钥文件。</p>
+<p>接着又会提示你输入两次密码（该密码是你push文件的时候要输入的密码，而不是github管理者的密码），也可以不输入密码，直接按回车。那么push的时候就不需要输入密码，直接提交到github上了</p>
+<blockquote>
+<p> 密钥用于鉴权，请谨慎保管。公钥文件以 .pub 扩展名结尾，可以公开给其他人，而没有 .pub 扩展名的私钥文件不要泄露给任何人！</p>
+</blockquote>
+<h2 id="拷贝公钥到对应平台"><a href="#拷贝公钥到对应平台" class="headerlink" title="拷贝公钥到对应平台"></a>拷贝公钥到对应平台</h2><p>需要拷贝 id_rsa.pub 文件的内容，你可以用编辑器打开文件复制，也可以用git命令复制该文件的内容</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clip &lt; ~/.sh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 
-<p>添加内容（阿里源）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+<p>在git平台一般在设置中有 ssh 配置，将拷贝的内容复制到里面保存</p>
+<h2 id="测试-SSH-key"><a href="#测试-SSH-key" class="headerlink" title="测试 SSH key"></a>测试 SSH key</h2><p>在git Bash 中输入以下代码</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
-<p>保存并退出（vim：w保存；q退出）</p>
-<p>更新缓存</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo apt-get update</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo apt-get upgrade</span></span><br></pre></td></tr></table></figure>
+<p>当你输入以上代码时，会有一段警告代码，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host &#x27;github.com (207.97.227.239)&#x27; can&#x27;t be established.</span><br><span class="line"># RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span><br><span class="line"># Are you sure you want to continue connecting (yes/no)?</span><br></pre></td></tr></table></figure>
 
+<p>这是正常的，你输入 yes 回车既可。如果你创建 SSH key 的时候设置了密码，接下来就会提示你输入密码，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase for key &#x27;/c/Users/Administrator/.ssh/id_rsa&#x27;:</span><br></pre></td></tr></table></figure>
 
+<p>当然如果你密码输错了，会再要求你输入，知道对了为止。</p>
+<p>注意：输入密码时如果输错一个字就会不正确，使用删除键是无法更正的。</p>
+<p>密码正确后你会看到下面这段话，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hi username! You&#x27;ve successfully authenticated, but GitHub does not</span><br><span class="line"># provide shell access.</span><br></pre></td></tr></table></figure>
 
-<h2 id="其他数据源"><a href="#其他数据源" class="headerlink" title="其他数据源"></a>其他数据源</h2><p><strong>清华源</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+<p>如果用户名是正确的,你已经成功设置SSH密钥。</p>
+<h2 id="配置根据目标平台自动选择密钥"><a href="#配置根据目标平台自动选择密钥" class="headerlink" title="配置根据目标平台自动选择密钥"></a>配置根据目标平台自动选择密钥</h2><p>重复上面的步骤，再次生成一个密钥</p>
+<p>假设现在你创建的文件如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- github_id_rsa</span><br><span class="line">- github_id_rsa.pub</span><br><span class="line">- gitee_id_rsa</span><br><span class="line">- gitee_id_rsa.pub</span><br></pre></td></tr></table></figure>
 
-<p><strong>中科大</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+<p>在<code>~/.ssh</code>中创建并编辑config文件，格式如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># github</span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/github_id_rsa</span><br><span class="line"># gitee</span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/gitee_id_rsa</span><br></pre></td></tr></table></figure>
 
-<p><strong>163源</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>Host：git 服务器的域名（本地连接时的地址，可以认为是别名）</li>
+<li>HostName：git 服务器的域名</li>
+<li>IdentityFile：指定私钥的路径</li>
+</ul>
+</blockquote>
+<p>分别测试是否连通</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@gitee.com</span><br></pre></td></tr></table></figure>
 
+<p>返回对应平台的用户名即配置成功</p>
+<h2 id="配置同一平台多个账号"><a href="#配置同一平台多个账号" class="headerlink" title="配置同一平台多个账号"></a>配置同一平台多个账号</h2><p>假设现在你创建的文件如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- gitee_user</span><br><span class="line">- gitee_user.pub</span><br><span class="line">- gitee_visitor</span><br><span class="line">- gitee_visitor.pub</span><br></pre></td></tr></table></figure>
 
+<p>修改文件<code>config</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># gitee(user)</span><br><span class="line">Host gitee_user.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/gitee_user</span><br><span class="line"># gitee(visitor)</span><br><span class="line">Host gitee_visitor.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/gitee_visitor</span><br></pre></td></tr></table></figure>
+
+<p>使用Host进行区分，以hello账号拉取推送时，使用Host：gitee_hello.com，以world账号拉取推送时，使用Host：gitee_world.com。</p>
+<p>测试连通性：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@gitee_user.com</span><br><span class="line">ssh -T git@gitee_visitor.com</span><br></pre></td></tr></table></figure>
+
+<p>分别返回用户名即成功</p>
 
   </div>
   
@@ -2502,10 +2575,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-04-08T17:05:07+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-03-05T15:18:40+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年4月8日</p>
+    <p>更新于：2025年3月5日</p>
   </a>
 </div>
 
@@ -2514,8 +2587,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>服务器</p></a></div>
-  <span hidden itemprop="keywords">服务器</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/ssh/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>ssh</p></a></div>
+  <span hidden itemprop="keywords">ssh</span>
 
 
         
@@ -2528,7 +2601,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/04/08/ubuntu%E6%9B%B4%E6%8D%A2apt%E6%BA%90/&title=ubuntu更换apt源 - extends&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2025/03/05/%E9%85%8D%E7%BD%AEssh%E5%AF%86%E9%92%A5/&title=配置ssh密钥 - extends&summary="
           
           >
           
@@ -2540,7 +2613,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/04/08/ubuntu%E6%9B%B4%E6%8D%A2apt%E6%BA%90/&title=ubuntu更换apt源 - extends&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2025/03/05/%E9%85%8D%E7%BD%AEssh%E5%AF%86%E9%92%A5/&title=配置ssh密钥 - extends&summary="
           
           >
           
@@ -2552,7 +2625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/04/08/ubuntu%E6%9B%B4%E6%8D%A2apt%E6%BA%90/&title=ubuntu更换apt源 - extends&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2025/03/05/%E9%85%8D%E7%BD%AEssh%E5%AF%86%E9%92%A5/&title=配置ssh密钥 - extends&summary="
           
           >
           
@@ -2585,24 +2658,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/04/10/jenkins%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>jenkins配置教程</p>
-          <p class='content'>说明简介　　Jenkins是一个开源软件项目，是基于Java开发的一种持续集成工具，用于监控持续重复的工作，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
-部署环境
-jdk环境，Je...</p>
+        <a class='prev' href='/2025/03/05/centos7%E9%85%8D%E7%BD%AEipv4/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>centos7配置ipv4</p>
+          <p class='content'>centos7配置ipv4地址编辑 ifcfg-ens33 文件1vim /etc/sysconfig/network-scripts/ifcfg-ens33
+
+该文件名称对应你使用的网络名称，...</p>
         </a>
       
       
-        <a class='next' href='/2023/04/03/MySQL%E4%B8%ADgroup%E7%9A%84%E7%94%A8%E6%B3%95/'>
-          <p class='title'>MySQL中group的用法<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>说明：group 一般和聚合函数一起使用，后面可以跟上 HAVING 关键字一起使用。(having 和 where 用法相同，不同的是having可以后跟聚合函数)
+        <a class='next' href='/2025/03/01/OnlyOffice%E9%85%8D%E7%BD%AE/'>
+          <p class='title'>OnlyOffice配置<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>安装OnlyOffice拉取onlyoffice镜像1sudo docker pull onlyoffice/documentserver
 
 
-
-关键字
-用法
-缺点
-...</p>
+可以自定义版本，示例使用的版本为7.3，不指定默认...</p>
         </a>
       
     </div>
@@ -2618,7 +2687,7 @@ jdk环境，Je...</p>
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/04/08/ubuntu%E6%9B%B4%E6%8D%A2apt%E6%BA%90/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2025/03/05/%E9%85%8D%E7%BD%AEssh%E5%AF%86%E9%92%A5/index.html#comments">
     </span>
     <p ct><i class='fas fa-comments'></i> 评论</p>
     
@@ -2660,7 +2729,7 @@ jdk环境，Je...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ubuntu%E6%9B%B4%E6%8D%A2apt%E5%9B%BD%E5%86%85%E6%BA%90"><span class="toc-text">Ubuntu更换apt国内源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E6%95%B0%E6%8D%AE%E6%BA%90"><span class="toc-text">其他数据源</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-text">前提条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90-SSH-%E5%AF%86%E9%92%A5"><span class="toc-text">生成 SSH 密钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%B7%E8%B4%9D%E5%85%AC%E9%92%A5%E5%88%B0%E5%AF%B9%E5%BA%94%E5%B9%B3%E5%8F%B0"><span class="toc-text">拷贝公钥到对应平台</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95-SSH-key"><span class="toc-text">测试 SSH key</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%A0%B9%E6%8D%AE%E7%9B%AE%E6%A0%87%E5%B9%B3%E5%8F%B0%E8%87%AA%E5%8A%A8%E9%80%89%E6%8B%A9%E5%AF%86%E9%92%A5"><span class="toc-text">配置根据目标平台自动选择密钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%90%8C%E4%B8%80%E5%B9%B3%E5%8F%B0%E5%A4%9A%E4%B8%AA%E8%B4%A6%E5%8F%B7"><span class="toc-text">配置同一平台多个账号</span></a></li></ol>
     </div>
   </section>
 
@@ -3319,7 +3388,7 @@ jdk环境，Je...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"extends"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/后端/","name":"后端"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/04/08/ubuntu更换apt源/","name":"ubuntu更换apt源"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"extends","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"ubuntu更换apt源","description":"个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/04/08/ubuntu%E6%9B%B4%E6%8D%A2apt%E6%BA%90/"},"author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"extends","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/04/08/ubuntu%E6%9B%B4%E6%8D%A2apt%E6%BA%90/","wordCount":0,"datePublished":"2023-04-08T08:47:23.000Z","dateModified":"2023-04-08T09:05:07.325Z","articleSection":"后端","keywords":"服务器","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"extends"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/后端/","name":"后端"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/后端/服务器/","name":"服务器"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/03/05/配置ssh密钥/","name":"配置ssh密钥"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"extends","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"配置ssh密钥","description":"个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/03/05/%E9%85%8D%E7%BD%AEssh%E5%AF%86%E9%92%A5/"},"author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"extends","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/03/05/%E9%85%8D%E7%BD%AEssh%E5%AF%86%E9%92%A5/","wordCount":0,"datePublished":"2025-03-05T07:17:32.000Z","dateModified":"2025-03-05T07:18:40.945Z","articleSection":"后端","keywords":"ssh","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
