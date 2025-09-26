@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/archives/2023/page/2/"/>
+  
+  <link rel="canonical" href="http://example.com/2025/09/26/docker部署ollama/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,17 +32,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档：2023 - extends</title>
+  <title>Docker部署Ollama - extends</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="个人博客 - extends - extends">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="extends">
-<meta property="og:url" content="http://example.com/archives/2023/page/2/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker部署Ollama">
+<meta property="og:url" content="http://example.com/2025/09/26/Docker%E9%83%A8%E7%BD%B2Ollama/index.html">
 <meta property="og:site_name" content="extends">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="Docker 安装 Ollama 安装 NVIDIA 驱动  12# 使用 nvidia-smi 命令检查驱动和 GPU 是否正常识别nvidia-smi  需要正确安装显卡驱动，执行命令输出显卡信息  安装 NVIDIA Container Toolkit  它提供了 nvidia-container-runtime，让 Docker 能够使用 GPU 参考官方文档安装即可，Ubuntu系统安装">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-09-26T08:16:50.000Z">
+<meta property="article:modified_time" content="2025-09-26T08:17:58.367Z">
 <meta property="article:author" content="extends">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2048,7 +2050,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2317,7 +2319,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2372,16 +2374,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/03/前后端分离项目跨域问题/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/09/26/Docker部署Ollama/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="extends">
   </span>
@@ -2390,92 +2384,256 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="个人博客">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/01/03/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"  itemprop="url">
-        前后端分离项目跨域问题
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        方法一：SpringBoot后端进行处理在 每个 Controller 类上加入 @CrossOrigin 注解
-或者
-在 Controller的基类中加上 @CrossOrigin 注解然后其他 Controller 类就有了这个 @Controller此时跨域访问就不会报错了。
-方法二：在Vue前端进行处理浏览器 在同一个页面访问不同的域 是存在跨域问题的
-但 服务器之间的访问是 没有跨...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        Docker部署Ollama
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-09-26T16:16:50+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2025年9月26日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="Docker-安装-Ollama"><a href="#Docker-安装-Ollama" class="headerlink" title="Docker 安装 Ollama"></a>Docker 安装 Ollama</h2><ol>
+<li><strong>安装 NVIDIA 驱动</strong></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用 nvidia-smi 命令检查驱动和 GPU 是否正常识别</span></span><br><span class="line">nvidia-smi</span><br></pre></td></tr></table></figure>
+
+<p>需要正确安装显卡驱动，执行命令输出显卡信息</p>
+<ol start="2">
+<li><strong>安装 NVIDIA Container Toolkit</strong></li>
+</ol>
+<p>它提供了 <code>nvidia-container-runtime</code>，让 Docker 能够使用 GPU</p>
+<p>参考官方文档安装即可，Ubuntu系统安装更便捷</p>
+<p>使用以下命令检测工具包是否已安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dpkg -l | grep nvidia-container-toolkit</span><br><span class="line"><span class="comment"># 或者用 rpm（针对RedHat/CentOS系统）</span></span><br><span class="line">rpm -qa | grep nvidia-container-toolkit</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="3">
+<li><strong>配置 Docker 使用 NVIDIA Runtime</strong></li>
+</ol>
+<p>安装完工具包后，执行以下命令来配置 Docker</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nvidia-ctk runtime configure --runtime=docker</span><br></pre></td></tr></table></figure>
+
+<p>配置完成后重启 Docker 服务使配置生效</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
+
+<p>可以使用一个官方的 NVIDIA 测试镜像验证上述所有配置是否正确</p>
+<p>在宿主机上运行容器进行验证：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --<span class="built_in">rm</span> --gpus all nvidia/cuda:12.4.1-base-ubuntu22.04 nvidia-smi</span><br></pre></td></tr></table></figure>
+
+<p>如果成功这个命令会下载一个镜像并输出和宿主机上 <code>nvidia-smi</code>一模一样的表格。这说明你的 Docker GPU 环境配置是正确的</p>
+<ol start="4">
+<li><strong>启动 Ollama 容器</strong></li>
+</ol>
+<p>确保容器启动使用了<code>--gpus all</code>参数配置</p>
+<p>说明：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --gpus all \          # 让容器能使用所有GPU</span><br><span class="line">  -v ollama:/root/.ollama \  # 将数据卷挂载进来，持久化模型和配置</span><br><span class="line">  -p 11434:11434 \      # 映射端口，用于API访问</span><br><span class="line">  --name ollama \       # 给容器起个名字</span><br><span class="line">  --restart unless-stopped \ # 设置自动重启（可选但推荐）</span><br><span class="line">  ollama/ollama         # 使用的镜像</span><br></pre></td></tr></table></figure>
+
+<p>执行命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">  --gpus all \</span><br><span class="line">  -v ollama:/root/.ollama \</span><br><span class="line">  -p 11434:11434 \</span><br><span class="line">  --name ollama \</span><br><span class="line">  --restart unless-stopped \</span><br><span class="line">  ollama/ollama</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="docker安装AnythingLLM"><a href="#docker安装AnythingLLM" class="headerlink" title="docker安装AnythingLLM"></a>docker安装AnythingLLM</h2><p>使用官方docker启动命令安装最新版本</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> STORAGE_LOCATION=<span class="variable">$HOME</span>/anythingllm &amp;&amp; \</span><br><span class="line"><span class="built_in">mkdir</span> -p <span class="variable">$STORAGE_LOCATION</span> &amp;&amp; \</span><br><span class="line"><span class="built_in">touch</span> <span class="string">&quot;<span class="variable">$STORAGE_LOCATION</span>/.env&quot;</span> &amp;&amp; \</span><br><span class="line">docker run -d -p 3001:3001 \</span><br><span class="line">--cap-add SYS_ADMIN \</span><br><span class="line">--name anythingllm \</span><br><span class="line">-v <span class="variable">$&#123;STORAGE_LOCATION&#125;</span>:/app/server/storage \</span><br><span class="line">-v <span class="variable">$&#123;STORAGE_LOCATION&#125;</span>/.env:/app/server/.env \</span><br><span class="line">-e STORAGE_DIR=<span class="string">&quot;/app/server/storage&quot;</span> \</span><br><span class="line">mintplexlabs/anythingllm:latest</span><br></pre></td></tr></table></figure>
+
+<p>Go to <code>http://localhost:3001</code> </p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 3001:3001 \</span><br><span class="line"> --name anythingllm \</span><br><span class="line"> --cap-add SYS_ADMIN \</span><br><span class="line">-e STORAGE_DIR=<span class="string">&quot;/app/server/storage&quot;</span> \</span><br><span class="line"> mintplexlabs/anythingllm:latest</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="ollama安装模型"><a href="#ollama安装模型" class="headerlink" title="ollama安装模型"></a>ollama安装模型</h2><p>docker exec -it ollama bash</p>
+<p>ollama run deepseek-r1:32b</p>
+<p>ollama pull mxbai-embed-large</p>
+
+  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/extendsy'><img src='https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg">
-            <meta itemprop="name" content="extends">
-            <meta itemprop="url" content="https://github.com/extendsy">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-01-03T16:43:54+08:00">2023-01-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E5%90%8E%E7%AB%AF/">前后端</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E5%90%8E%E7%AB%AF/" itemprop="url"><span itemprop="name">前后端</span></a>
-            </span>
-          
-        
-      </div>
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/01/03/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%A1%B9%E7%9B%AE%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-09-26T16:17:58+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2025年9月26日</p>
+  </a>
 </div>
 
-          </div>
         
       
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-  </section>
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2025/09/26/Docker%E9%83%A8%E7%BD%B2Ollama/&title=Docker部署Ollama - extends&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2025/09/26/Docker%E9%83%A8%E7%BD%B2Ollama/&title=Docker部署Ollama - extends&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2025/09/26/Docker%E9%83%A8%E7%BD%B2Ollama/&title=Docker部署Ollama - extends&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
-    
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/archives/2023/">
-            <section class="post prev white-box shadow floatable blur" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          2 / 2
-        </p>
-        
-      </div>
-    
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/03/05/centos7%E9%85%8D%E7%BD%AEipv4/'>
+          <p class='title'>centos7配置ipv4<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>centos7配置ipv4地址编辑 ifcfg-ens33 文件1vim /etc/sysconfig/network-scripts/ifcfg-ens33
+
+该文件名称对应你使用的网络名称，...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
-	
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2025/09/26/Docker%E9%83%A8%E7%BD%B2Ollama/index.html#comments">
+    </span>
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2484,157 +2642,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://pic.imgdb.cn/item/6375f8ec16f2c2beb12c0d3a.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>Extends</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">extends</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:1393687715@qq.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/extendsy/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%89%8D%E5%90%8E%E7%AB%AF/" href="/categories/%E5%89%8D%E5%90%8E%E7%AB%AF/"
-            active-action="action-categoriesE5898DE5908EE7ABAF"
-            ><div class='name'>前后端</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
-            active-action="action-categoriesE5898DE7ABAF"
-            ><div class='name'>前端</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%89%8D%E7%AB%AF/WebSocket/" href="/categories/%E5%89%8D%E7%AB%AF/WebSocket/"
-            active-action="action-categoriesE5898DE7ABAFWebSocket"
-            ><div class='name'>WebSocket</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%89%8D%E7%AB%AF/axios/" href="/categories/%E5%89%8D%E7%AB%AF/axios/"
-            active-action="action-categoriesE5898DE7ABAFaxios"
-            ><div class='name'>axios</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%89%8D%E7%AB%AF/vue/" href="/categories/%E5%89%8D%E7%AB%AF/vue/"
-            active-action="action-categoriesE5898DE7ABAFvue"
-            ><div class='name'>vue</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%90%8E%E7%AB%AF/" href="/categories/%E5%90%8E%E7%AB%AF/"
-            active-action="action-categoriesE5908EE7ABAF"
-            ><div class='name'>后端</div><div class='badge'>(17)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%90%8E%E7%AB%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/" href="/categories/%E5%90%8E%E7%AB%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/"
-            active-action="action-categoriesE5908EE7ABAFE69C8DE58AA1E599A8"
-            ><div class='name'>服务器</div><div class='badge'>(3)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/JDBC/" style="font-size: 14px; color: #999">JDBC</a> <a href="/tags/MySQL/" style="font-size: 14px; color: #999">MySQL</a> <a href="/tags/axios/" style="font-size: 20.67px; color: #6c6c6c">axios</a> <a href="/tags/centos/" style="font-size: 14px; color: #999">centos</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/java/" style="font-size: 17.33px; color: #828282">java</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mybatis/" style="font-size: 14px; color: #999">mybatis</a> <a href="/tags/springboot/" style="font-size: 17.33px; color: #828282">springboot</a> <a href="/tags/ssh/" style="font-size: 14px; color: #999">ssh</a> <a href="/tags/swagger/" style="font-size: 14px; color: #999">swagger</a> <a href="/tags/web/" style="font-size: 14px; color: #999">web</a> <a href="/tags/websocket/" style="font-size: 14px; color: #999">websocket</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 24px; color: #555">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 14px; color: #999">后端</a> <a href="/tags/%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3/" style="font-size: 14px; color: #999">在线文档</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 17.33px; color: #828282">基础</a> <a href="/tags/%E5%B1%8F%E5%B9%95%E9%97%AA%E5%8A%A8/" style="font-size: 14px; color: #999">屏幕闪动</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 17.33px; color: #828282">服务器</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/" style="font-size: 14px; color: #999">计算机原理</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-%E5%AE%89%E8%A3%85-Ollama"><span class="toc-text">Docker 安装 Ollama</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E5%AE%89%E8%A3%85AnythingLLM"><span class="toc-text">docker安装AnythingLLM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ollama%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9E%8B"><span class="toc-text">ollama安装模型</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2662,13 +2711,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2677,14 +2727,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3271,7 +3321,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"extends"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/archives/2023/","name":"2023年"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"extends","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"extends","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"extends"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/09/26/Docker部署Ollama/","name":"Docker部署Ollama"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"extends","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"extends","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Docker部署Ollama","description":"个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/09/26/Docker%E9%83%A8%E7%BD%B2Ollama/"},"author":{"@type":"Person","name":"extends","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"extends","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/09/26/Docker%E9%83%A8%E7%BD%B2Ollama/","wordCount":0,"datePublished":"2025-09-26T08:16:50.000Z","dateModified":"2025-09-26T08:17:58.367Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
